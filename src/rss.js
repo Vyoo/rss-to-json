@@ -122,6 +122,9 @@ module.exports = {
         if (val['itunes:season']) {
           obj.itunes_season = val['itunes:season'];
         }
+        if (val['itunes:image']) {
+          obj.itunes_image = val['itunes:image'].href || '';
+        }
         if (val['itunes:episode']) {
           obj.itunes_episode = val['itunes:episode'];
         }
